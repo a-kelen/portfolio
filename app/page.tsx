@@ -1,11 +1,17 @@
-import { Welcome } from "../components/Welcome/Welcome";
-import { ColorSchemeToggle } from "../components/ColorSchemeToggle/ColorSchemeToggle";
+import { Grid, GridCol } from "@mantine/core";
+import { PersonalInfoContainer } from "../components/PersonalInfoContainer/PersonalInfoContainer";
+import { WorkInfoContainer } from "../components/WorkInfoContainer/WorkInfoContainer";
+import '@mantine/carousel/styles.css';
 
 export default function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Grid p={20} pb={50}>
+      <GridCol span={3}>
+        <PersonalInfoContainer />
+      </GridCol>
+      <GridCol span={9}>
+        <WorkInfoContainer />
+      </GridCol>
+    </Grid>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "mantine-minimal-next-template",
+  "name": "portfolio-ak",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.0.1",
     "@mantine/core": "7.0.1",
     "@mantine/hooks": "7.0.1",
     "@mantine/vanilla-extract": "7.0.1",
     "@vanilla-extract/css": "^1.11.1",
+    "moment": "^2.30.1",
     "next": "13.4.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@types/node": "20.2.5",
