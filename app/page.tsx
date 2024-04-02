@@ -1,7 +1,6 @@
 import { Grid, GridCol } from "@mantine/core";
 import { PersonalInfoContainer } from "../components/PersonalInfoContainer/PersonalInfoContainer";
 import { WorkInfoContainer } from "../components/WorkInfoContainer/WorkInfoContainer";
-import '@mantine/carousel/styles.css';
 
 export default function HomePage() {
   return (
