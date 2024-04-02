@@ -15,6 +15,7 @@ export function PersonalInfoContainer() {
                 mb={10}
                 fit="contain"
                 src="me.jpg"
+                alt=""
             />
         </AspectRatio>
         <Stack gap={5}>
@@ -30,7 +31,7 @@ export function PersonalInfoContainer() {
             <Text fw={600} c="indigo"><HiOutlineLocationMarker /> {bio.country}, {bio.city}</Text>
             <Group my={8}>
                 {bio.languages.map(l => 
-                    (<LanguageMarker name={l.shortName} description={l.description} />)
+                    (<LanguageMarker key={l.shortName} name={l.shortName} description={l.description} />)
                 )}
             </Group>
             <Contacts />

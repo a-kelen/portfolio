@@ -4,7 +4,6 @@ import { Anchor, Drawer, Flex, Paper, ScrollArea, Stack, Text, Title } from '@ma
 import React from 'react';
 import classes from './Project.module.css';
 import { useDisclosure } from '@mantine/hooks';
-import { Carousel, CarouselSlide } from '@mantine/carousel';
 import { Skill } from '../WorkInfoContainer/Skill/Skill';
 import { SiNestjs } from 'react-icons/si';
 
@@ -33,13 +32,6 @@ export function Project({ icon, title } : ProjectProps) {
                 <ScrollArea offsetScrollbars style={{
                     height: "calc(100vh - 80px)"
                 }}>
-                    <Carousel withIndicators height={200}>
-                        <CarouselSlide>1</CarouselSlide>
-                        <CarouselSlide>2</CarouselSlide>
-                        <CarouselSlide>3</CarouselSlide>
-                        <CarouselSlide>4</CarouselSlide>
-                        <CarouselSlide>5</CarouselSlide>
-                    </Carousel>
                     <Flex my={15} gap="sm" wrap="wrap">
                         <Skill icon={<SiNestjs />} skill="NestJS" />
                         <Skill icon={<SiNestjs />} skill="NestJS" />

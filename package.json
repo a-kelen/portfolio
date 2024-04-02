@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/carousel": "^7.0.1",
     "@mantine/core": "7.0.1",
     "@mantine/hooks": "7.0.1",
     "@mantine/vanilla-extract": "7.0.1",

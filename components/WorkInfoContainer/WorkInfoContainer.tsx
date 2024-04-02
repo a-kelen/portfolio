@@ -35,7 +35,7 @@ export function WorkInfoContainer() {
         <Stack gap={0}>
           <Text fz={23} tt="uppercase" fw={900} c="indigo">Skills</Text>
           <Flex gap="sm" wrap="wrap">
-            {skills.map(s => <Skill icon={<s.icon />} skill={s.name} />)}
+            {skills.map(s => <Skill key={s.name} icon={<s.icon />} skill={s.name} />)}
           </Flex>
         </Stack>
         <Stack gap={0}>
